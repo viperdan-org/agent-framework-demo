@@ -1,3 +1,8 @@
+---
+layout: default
+title: Microsoft Agent Framework – Key Fundamentals & Agenda
+---
+
 # Microsoft Agent Framework – Key Fundamentals & Agenda
 
 ## Overview & Context
