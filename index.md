@@ -229,7 +229,7 @@ Microsoft Agent Framework provides excellent developer experience:
 
 **Portability** – Run agents locally for dev/test, then deploy the same code to Azure. No vendor lock-in – works in containers, on-premises, or other clouds.
 
-### 🎛️ Azure AI Foundry Integration
+### Azure AI Foundry Integration
 
 Agent Framework is built to integrate with **Azure AI Foundry** (Microsoft's AI Cloud platform). It's not a Foundry-specific framework (you can use it anywhere), but if you *do* use Azure AI Foundry, Agent Framework plugs in nicely.
 
