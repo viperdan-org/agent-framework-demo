@@ -5,9 +5,9 @@
 The **Microsoft Agent Framework** is a new open-source SDK and runtime (now in Public Preview) for building and orchestrating AI agents. It is a **comprehensive multi-language framework** (supporting both .NET and Python) designed specifically for building, orchestrating, and deploying AI agents with advanced features like **graph-based workflows, streaming, checkpointing, and human-in-the-loop** capabilities.
 
 > **Important Clarification:** Microsoft Agent Framework is a **separate project** from Semantic Kernel and AutoGen. While all three frameworks enable AI agent development, they serve different purposes and continue to be maintained independently:
-> - **Semantic Kernel** – Enterprise-ready SDK with its own built-in Agent Framework for building and orchestrating multi-agent systems
-> - **AutoGen** – Research-oriented framework for multi-agent AI applications (new users are directed to consider Microsoft Agent Framework)
-> - **Microsoft Agent Framework** – The newest framework focused on graph-based workflows and advanced orchestration patterns
+> - **Semantic Kernel** – Enterprise-ready SDK with its own built-in Agent Framework for building and orchestrating multi-agent systems.
+> - **AutoGen** – Research-oriented framework for multi-agent AI applications (new users are directed to consider Microsoft Agent Framework).
+> - **Microsoft Agent Framework** – The newest framework focused on graph-based workflows and advanced orchestration patterns.
 
 Our 30-minute session will cover:
 
