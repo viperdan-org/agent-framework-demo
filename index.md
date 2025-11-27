@@ -5,16 +5,17 @@ title: Microsoft Agent Framework – Key Fundamentals & Agenda
 
 ## Table of Contents
 
-- [Overview & Context](#overview--context)
-- [1. Agent Framework Fundamentals: What *is* an AI Agent?](#1-agent-framework-fundamentals-what-is-an-ai-agent)
-- [2. How Agent Framework Differs from Semantic Kernel and AutoGen](#2-how-agent-framework-differs-from-semantic-kernel-and-autogen)
-- [3. Key Features & Capabilities of Agent Framework](#3-key-features--capabilities-of-agent-framework)
-- [Azure AI Foundry Demo Section](#azure-ai-foundry-demo-section)
-- [4. Demo Plan: From Basic Agent to Multi-Agent](#4-demo-plan-from-basic-agent-to-multi-agent)
-- [5. Q&A – Key Question: Agent Framework on Azure Functions vs. Foundry Agent Service?](#5-qa--key-question-agent-framework-on-azure-functions-vs-foundry-agent-service)
-- [Recap](#recap)
-- [Quick Reference: Code Examples](#quick-reference-code-examples)
-- [Resources](#resources)
+1. [Overview & Context](#overview--context)
+2. [Agent Framework Fundamentals](#1-agent-framework-fundamentals-what-is-an-ai-agent)
+3. [Framework Comparison](#2-how-agent-framework-differs-from-semantic-kernel-and-autogen)
+4. [Key Features & Capabilities](#3-key-features--capabilities-of-agent-framework)
+5. [Azure AI Foundry Integration](#azure-ai-foundry-integration)
+6. [Azure AI Foundry Demos](#azure-ai-foundry-demo-section)
+7. [Demo Plan](#4-demo-plan-from-basic-agent-to-multi-agent)
+8. [Q&A](#5-qa--key-question-agent-framework-on-azure-functions-vs-foundry-agent-service)
+9. [Recap](#recap)
+10. [Quick Reference](#quick-reference-code-examples)
+11. [Resources](#resources)
 
 # Microsoft Agent Framework – Key Fundamentals & Agenda
 
