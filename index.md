@@ -9,8 +9,8 @@ title: Microsoft Agent Framework – Key Fundamentals & Agenda
 2. [Agent Framework Fundamentals](#1-agent-framework-fundamentals-what-is-an-ai-agent)
 3. [Framework Comparison](#2-how-agent-framework-differs-from-semantic-kernel-and-autogen)
 4. [Key Features & Capabilities](#3-key-features--capabilities-of-agent-framework)
-5. [Azure AI Foundry Integration](#azure-ai-foundry-integration)
-6. [Azure AI Foundry Demos](#azure-ai-foundry-demo-section)
+5. [Microsoft Foundry Integration](#microsoft-foundry-integration)
+6. [Microsoft Foundry Demos](#microsoft-foundry-demo-section)
 7. [Demo Plan](#4-demo-plan-from-basic-agent-to-multi-agent)
 8. [Q&A](#5-qa--key-question-agent-framework-on-azure-functions-vs-foundry-agent-service)
 9. [Recap](#recap)
@@ -34,7 +34,7 @@ Our 30-minute session will cover:
 - **2. Agent Framework vs. Semantic Kernel & AutoGen:** Key differences in architecture, developer experience, use cases, and unique capabilities.
 - **3. Stand-out Features:** Favourite features of Agent Framework – e.g. multi-agent **workflow orchestration**, open interoperability (tools & protocols), and enterprise-grade enhancements.
 - **4. Demo (Basics to Multi-Agent):** A live example starting with a basic single-agent scenario and progressing to a coordinated multi-agent scenario.
-- **5. Q&A (incl. Deployment Choices):** For example, **when to deploy agents on Azure Functions (code-first) vs. using the Azure AI Foundry Agent Service** (fully managed) – a common customer question we'll address.
+- **5. Q&A (incl. Deployment Choices):** For example, **when to deploy agents on Azure Functions (code-first) vs. using the Microsoft Foundry Agent Service** (fully managed) – a common customer question we'll address.
 
 By focusing on these areas, we'll ensure the **essential insights come first** (what Agent Framework is and why it's different), then dive deeper into technical specifics and a practical demonstration, all within ~25 minutes plus ~5 minutes for Q&A.
 
@@ -229,13 +229,13 @@ Microsoft Agent Framework provides excellent developer experience:
 
 **Portability** – Run agents locally for dev/test, then deploy the same code to Azure. No vendor lock-in – works in containers, on-premises, or other clouds.
 
-### Azure AI Foundry Integration
+### Microsoft Foundry Integration
 
-Agent Framework is built to integrate with **Azure AI Foundry** (Microsoft's AI Cloud platform). It's not a Foundry-specific framework (you can use it anywhere), but if you *do* use Azure AI Foundry, Agent Framework plugs in nicely.
+Agent Framework is built to integrate with **Microsoft Foundry** (Microsoft's AI Cloud platform). It's not a Foundry-specific framework (you can use it anywhere), but if you *do* use Microsoft Foundry, Agent Framework plugs in nicely.
 
 #### What is Foundry Agent Service?
 
-**Foundry Agent Service** is the fully managed platform within Azure AI Foundry for deploying intelligent agents. Think of it as an "assembly line for intelligent agents" that brings together:
+**Foundry Agent Service** is the fully managed platform within Microsoft Foundry for deploying intelligent agents. Think of it as an "assembly line for intelligent agents" that brings together:
 
 1. **Models** – Select from GPT-4o, GPT-4, GPT-3.5, Llama, and other LLMs
 2. **Customization** – Fine-tuning, distillation, domain-specific prompts
@@ -314,7 +314,7 @@ Understanding the relationship between **Microsoft Agent Framework** and the **F
 └──────────────────────────────────────────│──────────────────────┘
                                            ▼
                               ┌─────────────────────────┐
-                              │   Azure AI Foundry      │
+                              │   Microsoft Foundry     │
                               │   (Cloud Platform)      │
                               │                         │
                               │  • GPT-4o, Llama, etc.  │
@@ -484,9 +484,9 @@ Start: Building an AI Agent Application
 
 ---
 
-## Azure AI Foundry Demo Section
+## Microsoft Foundry Demo Section
 
-This section covers demos specifically for **Azure AI Foundry Agent Service**, showing how to create and deploy agents in the managed platform.
+This section covers demos specifically for **Microsoft Foundry Agent Service**, showing how to create and deploy agents in the managed platform.
 
 ### Demo 1: Basic Agent with Code Interpreter (Foundry Agent Service)
 
@@ -858,7 +858,7 @@ var thread = await client.Agents.Threads.CreateThreadAsync();
 await client.Agents.Messages.CreateMessageAsync(
     threadId: thread.Value.Id,
     role: "user",
-    content: "What are the key features of Azure AI Foundry?");
+    content: "What are the key features of Microsoft Foundry?");
 
 // Run the agent
 var run = await client.Agents.Runs.CreateAndProcessRunAsync(
@@ -942,7 +942,7 @@ This progression from simple to advanced aligns with how one would naturally ado
 
 ## 5. Q&A – Key Question: Agent Framework on Azure Functions vs. Foundry Agent Service?
 
-One anticipated question is: **"If a customer wants to deploy a team of agents (e.g. an orchestrator with two worker agents and a validator), should they build it with Agent Framework on Azure Functions, or use the Azure AI Foundry Agent Service?"** This speaks to **choosing between a code-first self-hosted approach vs. a managed PaaS approach**.
+One anticipated question is: **"If a customer wants to deploy a team of agents (e.g. an orchestrator with two worker agents and a validator), should they build it with Agent Framework on Azure Functions, or use the Microsoft Foundry Agent Service?"** This speaks to **choosing between a code-first self-hosted approach vs. a managed PaaS approach**.
 
 ### Agent Framework on Azure Functions (or Your Own Infrastructure)
 
@@ -961,15 +961,15 @@ It's also the only option if the solution must be **cloud-agnostic or hybrid** �
 
 **Summary:** *Use Agent Framework on Functions when you need fine-grained control, custom orchestration logic, multi-cloud flexibility, and you have the coding expertise to manage it.*
 
-### Azure AI Foundry Agent Service
+### Microsoft Foundry Agent Service
 
-This is the **fully managed platform** option. It's a service in Azure (part of *Azure AI Foundry*) where you can deploy agents without worrying about the underlying servers or scaling. 
+This is the **fully managed platform** option. It's a service in Azure (part of *Microsoft Foundry*) where you can deploy agents without worrying about the underlying servers or scaling. 
 
 **Choose this when the customer:**
 - **Prioritizes ease of deployment, built-in scalability, and ecosystem integration** over customization
 - Just wants agents to run and coordinate with minimal code
 - Wants to manage agents through a UI
-- Is already invested in Azure AI Foundry
+- Is already invested in Microsoft Foundry
 
 This provides *one-click deployment, auto-scaling, monitoring dashboards, compliance features out-of-the-box*. It's also tightly integrated with other Foundry components (like the model catalog, vector store, etc.).
 
